@@ -60,7 +60,7 @@ export default function App() {
       setResults(data)
     } catch (err) {
       // If anything goes wrong (network error, bad API key, etc.), show a message
-      setError('Search failed. Check your API key in .env')
+      setError('Search failed. Please try again.')
     } finally {
       // "finally" runs whether the try succeeded or the catch caught an error.
       // We always want to stop showing "Searching..." when the request is done.
