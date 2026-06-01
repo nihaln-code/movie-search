@@ -1,4 +1,4 @@
-# 🎬 Where to Watch
+#  Where to Watch
 
 > Search any movie or TV show and instantly find where to stream, rent, or buy it — filtered by country.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📸 Demo
+##  Demo
 
 <img width="1901" height="913" alt="image" src="https://github.com/user-attachments/assets/7ed5f502-4e1d-4c07-892c-ac99a7261cd7" />
 
@@ -18,13 +18,13 @@ Link:
 https://huggingface.co/spaces/NihalNimmagadda/WhereToWatch
 ---
 
-## 🔍 What It Does
+##  What It Does
 
 Where to Watch is a full-stack web app that lets you search any movie or TV show and see every platform where it's available, broken down by streaming, rental, and purchase options. Results are filtered by country, so you always see what's actually available where you are.
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Layer     | Technology                        |
 |-----------|-----------------------------------|
@@ -34,7 +34,7 @@ Where to Watch is a full-stack web app that lets you search any movie or TV show
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js v18+
@@ -71,7 +71,7 @@ The app will be running at `http://localhost:5173`
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Search** movies and TV shows by title
 - **See all platforms** — streaming, rental, and purchase options in one place
@@ -80,13 +80,13 @@ The app will be running at `http://localhost:5173`
 
 ---
 
-## 💡 What I Learned
+##  What I Learned
 
 Building this project gave me hands-on experience connecting a React frontend to a Python backend via a REST API. I learned how to handle async requests with `httpx` in FastAPI, manage CORS between development servers, and structure API responses so the frontend only gets the data it needs. Filtering availability by country required understanding how TMDB structures its watch provider data, which pushed me to write cleaner data transformation logic on the backend.
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Add user accounts to save and track a watchlist
 - Support filtering by platform (e.g. "only show Netflix results")
