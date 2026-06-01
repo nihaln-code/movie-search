@@ -12,7 +12,7 @@
 
 ## 📸 Demo
 
-<img width="1919" height="859" alt="image" src="https://github.com/user-attachments/assets/34cacd36-1253-4e0b-8118-f734dcac4c23" />
+<img width="1901" height="913" alt="image" src="https://github.com/user-attachments/assets/7ed5f502-4e1d-4c07-892c-ac99a7261cd7" />
 
 Link:
 https://huggingface.co/spaces/NihalNimmagadda/WhereToWatch
@@ -20,7 +20,7 @@ https://huggingface.co/spaces/NihalNimmagadda/WhereToWatch
 
 ## 🔍 What It Does
 
-Where to Watch is a full-stack web app that lets you search any movie or TV show and see every platform where it's available — broken down by streaming, rental, and purchase options. Results are filtered by country, so you always see what's actually available where you are.
+Where to Watch is a full-stack web app that lets you search any movie or TV show and see every platform where it's available, broken down by streaming, rental, and purchase options. Results are filtered by country, so you always see what's actually available where you are.
 
 ---
 
@@ -93,8 +93,3 @@ Building this project gave me hands-on experience connecting a React frontend to
 - Show availability history or notify when something leaves a platform
 - Mobile-responsive design improvements
 
----
-
-## 📄 License
-
-MIT License — feel free to use and modify.
