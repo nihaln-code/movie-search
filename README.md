@@ -12,9 +12,10 @@
 
 ## 📸 Demo
 
-<!-- Add a screenshot or GIF here -->
-> _Screenshot or GIF coming soon_
+<img width="1919" height="859" alt="image" src="https://github.com/user-attachments/assets/34cacd36-1253-4e0b-8118-f734dcac4c23" />
 
+Link:
+https://huggingface.co/spaces/NihalNimmagadda/WhereToWatch
 ---
 
 ## 🔍 What It Does
