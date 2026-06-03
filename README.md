@@ -1,3 +1,12 @@
+---
+title: Where To Watch
+emoji: 🎬
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+pinned: false
+---
+
 #  Where to Watch
 
 > Search any movie or TV show and instantly find where to stream, rent, or buy it — filtered by country.
