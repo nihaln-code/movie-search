@@ -92,15 +92,15 @@ export default function App() {
   // React converts it into actual DOM elements in the browser.
   return (
     <div className="min-h-screen bg-stone-950 text-white">
-      <div className="max-w-4xl mx-auto px-6 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
 
-        <header className="mb-12">
-          <h1 className="text-5xl font-bold tracking-tight mb-2">Where to Watch</h1>
-          <p className="text-zinc-400 text-lg">Search any movie or TV show to find where it's streaming.</p>
+        <header className="mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-2">Where to Watch</h1>
+          <p className="text-zinc-400 text-sm sm:text-lg">Search any movie or TV show to find where it's streaming.</p>
         </header>
 
-        {/* The search input and region dropdown sit side by side */}
-        <div className="flex gap-2 mb-10">
+        {/* On mobile: search bar stacks above region selector. On desktop: side by side. */}
+        <div className="flex flex-col sm:flex-row gap-2 mb-10">
           {/* We pass query/setQuery so SearchBar can read and update the text.
               We pass onSearch so the button/Enter key can trigger an immediate search. */}
           <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} />

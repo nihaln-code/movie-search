@@ -40,17 +40,17 @@ export default function WatchProviders({ media, region, onBack }) {
         ← Back to results
       </button>
 
-      {/* Movie/show header: poster + title + year + description */}
-      <div className="flex gap-6 mb-10">
+      {/* Movie/show header: stacks vertically on mobile, side by side on desktop */}
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-10">
         {media.poster_path && (
           <img
             src={`${POSTER_BASE}${media.poster_path}`}
             alt={media.title || media.name}
-            className="w-28 rounded flex-shrink-0"
+            className="w-36 sm:w-28 rounded flex-shrink-0"
           />
         )}
         <div className="flex flex-col justify-center">
-          <h2 className="text-3xl font-bold tracking-tight">{media.title || media.name}</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">{media.title || media.name}</h2>
           <p className="text-stone-500 text-sm mt-1">
             {media.media_type === 'movie' ? 'Movie' : 'TV Show'}
             {(media.release_date || media.first_air_date) &&

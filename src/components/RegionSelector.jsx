@@ -21,7 +21,7 @@ export default function RegionSelector({ region, setRegion }) {
     <select
       value={region}
       onChange={e => setRegion(e.target.value)}
-      className="bg-stone-900 border border-stone-700 rounded px-3 py-2.5 text-white focus:outline-none focus:border-amber-400 transition-colors"
+      className="w-full sm:w-auto bg-stone-900 border border-stone-700 rounded px-3 py-2.5 text-white focus:outline-none focus:border-amber-400 transition-colors"
     >
       {REGIONS.map(r => (
         <option key={r.code} value={r.code}>{r.label}</option>
