@@ -23,7 +23,7 @@ export default function SearchBar({ query, setQuery, onSearch }) {
         {query && (
           <button
             onClick={handleClear}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-500 hover:text-white transition-colors"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-stone-500 hover:text-white transition-colors"
           >
             ✕
           </button>

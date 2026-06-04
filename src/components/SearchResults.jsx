@@ -15,14 +15,15 @@ export default function SearchResults({ results, onSelect }) {
           key={item.id}
           onClick={() => onSelect(item)}
           // Border shifts to amber on hover — the accent color signals "this is clickable"
-          className="bg-stone-900 border border-stone-700 hover:border-amber-400 rounded overflow-hidden text-left transition-colors"
+          className="bg-stone-900 border border-stone-700 hover:border-amber-400 focus-visible:outline-none focus-visible:border-amber-400 rounded overflow-hidden text-left transition-colors"
         >
           <div className="relative">
             {item.poster_path ? (
               <img
                 src={`${IMG_BASE}${item.poster_path}`}
                 alt={item.title || item.name}
-                className="w-full aspect-[2/3] object-cover"
+                className="w-full aspect-[2/3] object-cover bg-stone-800"
+                loading="lazy"
               />
             ) : (
               <div className="w-full aspect-[2/3] bg-stone-800 flex items-center justify-center text-stone-500 text-sm p-2 text-center">

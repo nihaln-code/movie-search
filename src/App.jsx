@@ -116,7 +116,7 @@ export default function App() {
 
         {/* Only show "Searching..." while a request is in flight */}
         {loading && (
-          <p className="text-stone-500 mb-6">Searching...</p>
+          <p className="text-stone-500 mb-6 animate-pulse">Searching...</p>
         )}
 
         {!selectedMedia && (
