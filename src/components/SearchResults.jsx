@@ -15,7 +15,7 @@ export default function SearchResults({ results, onSelect }) {
           key={item.id}
           onClick={() => onSelect(item)}
           // Border shifts to amber on hover — the accent color signals "this is clickable"
-          className="bg-stone-900 border border-stone-700 hover:border-amber-400 focus-visible:outline-none focus-visible:border-amber-400 rounded overflow-hidden text-left transition-colors"
+          className="bg-stone-900 border border-stone-700 hover:border-amber-400 focus-visible:outline-none focus-visible:border-amber-400 rounded overflow-hidden text-left transition-colors cursor-pointer"
         >
           <div className="relative">
             {item.poster_path ? (

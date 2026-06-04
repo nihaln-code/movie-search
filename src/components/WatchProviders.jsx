@@ -35,7 +35,7 @@ export default function WatchProviders({ media, region, onBack }) {
     <div>
       <button
         onClick={onBack}
-        className="text-stone-500 hover:text-amber-400 mb-10 text-sm transition-colors"
+        className="inline-flex items-center gap-1 text-stone-500 hover:text-amber-400 mb-10 text-sm transition-colors cursor-pointer px-1 py-1 -mx-1"
       >
         ← Back to results
       </button>

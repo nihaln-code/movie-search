@@ -114,9 +114,19 @@ export default function App() {
           <p className="text-red-400 mb-6">{error}</p>
         )}
 
-        {/* Only show "Searching..." while a request is in flight */}
+        {/* Skeleton cards while a search is in flight — same shape as real cards so layout doesn't jump */}
         {loading && (
-          <p className="text-stone-500 mb-6 animate-pulse">Searching...</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="bg-stone-900 border border-stone-800 rounded overflow-hidden motion-safe:animate-pulse">
+                <div className="w-full aspect-[2/3] bg-stone-800" />
+                <div className="p-2.5 space-y-2">
+                  <div className="h-3 bg-stone-800 rounded w-3/4" />
+                  <div className="h-2 bg-stone-800 rounded w-1/2" />
+                </div>
+              </div>
+            ))}
+          </div>
         )}
 
         {!selectedMedia && (
