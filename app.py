@@ -37,4 +37,9 @@ async def watch_providers(media_type: str, id: int):
     return await tmdb_get(f"/{media_type}/{id}/watch/providers")
 
 
+@app.get("/api/release-dates/movie/{id}")
+async def release_dates(id: int):
+    return await tmdb_get(f"/movie/{id}/release_dates")
+
+
 app.mount("/", StaticFiles(directory="dist", html=True), name="static")

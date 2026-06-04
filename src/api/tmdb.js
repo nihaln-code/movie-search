@@ -19,3 +19,7 @@ export async function getWatchProviders(mediaType, id) {
 export async function getTrending() {
   return apiFetch('/api/trending')
 }
+
+export async function getReleaseDates(id) {
+  return apiFetch(`/api/release-dates/movie/${id}`)
+}
