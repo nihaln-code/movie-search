@@ -119,18 +119,23 @@ export default function App() {
           <p className="text-stone-500 mb-6">Searching...</p>
         )}
 
-        {/* Show the grid whenever no item is selected — either search results or trending.
-            The label above the grid switches depending on which we're showing. */}
         {!selectedMedia && (
           <>
+            {/* No results: user searched something but got nothing back */}
+            {query.trim() && !loading && results.length === 0 && (
+              <p className="text-stone-500">No titles found for "{query}"</p>
+            )}
+
             {/* Label: only render when there's something to label */}
             {(results.length > 0 || (!query && trending.length > 0)) && (
               <p className="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-4">
                 {results.length > 0 ? 'Results' : 'Trending this week'}
               </p>
             )}
+
+            {/* Show search results if available, trending if no query, nothing if query returned no results */}
             <SearchResults
-              results={results.length > 0 ? results : trending}
+              results={results.length > 0 ? results : (query ? [] : trending)}
               onSelect={setSelectedMedia}
             />
           </>

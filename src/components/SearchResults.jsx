@@ -17,17 +17,24 @@ export default function SearchResults({ results, onSelect }) {
           // Border shifts to amber on hover — the accent color signals "this is clickable"
           className="bg-stone-900 border border-stone-700 hover:border-amber-400 rounded overflow-hidden text-left transition-colors"
         >
-          {item.poster_path ? (
-            <img
-              src={`${IMG_BASE}${item.poster_path}`}
-              alt={item.title || item.name}
-              className="w-full aspect-[2/3] object-cover"
-            />
-          ) : (
-            <div className="w-full aspect-[2/3] bg-stone-800 flex items-center justify-center text-stone-500 text-sm p-2 text-center">
-              No poster
-            </div>
-          )}
+          <div className="relative">
+            {item.poster_path ? (
+              <img
+                src={`${IMG_BASE}${item.poster_path}`}
+                alt={item.title || item.name}
+                className="w-full aspect-[2/3] object-cover"
+              />
+            ) : (
+              <div className="w-full aspect-[2/3] bg-stone-800 flex items-center justify-center text-stone-500 text-sm p-2 text-center">
+                No poster
+              </div>
+            )}
+            {item.original_language && (
+              <span className="absolute top-1.5 right-1.5 bg-stone-950/80 text-amber-400 text-xs font-bold px-1.5 py-0.5 rounded">
+                {item.original_language.toUpperCase()}
+              </span>
+            )}
+          </div>
 
           <div className="p-2.5">
             {/* Movies have "title", TV shows have "name" */}
